@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/global/NavBar";
+import Header from "@/components/global/Header";
+import Footer from "@/components/global/Footer";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -24,10 +25,12 @@ export default function RootLayout({
       className={`${robotoSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-          <NavBar />
-          <div className="h-[90vh]">
+          <Header />
+          <div className="min-h-[90vh] overflow-scroll">
             {children}
           </div>
+          <Footer />
+          
       </body>
     </html>
   );
