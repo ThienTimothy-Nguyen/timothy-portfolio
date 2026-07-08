@@ -1,7 +1,7 @@
 import AnimationBoard from "@/components/home/AnimationBoard";
 import Highlights from "@/components/home/Highlights";
 import Overview from "@/components/home/Overview";
-import Link from "next/link";
+import ProjectsHighlights from "@/components/home/ProjectsHighlights";
 import { RiArrowDownWideLine } from "react-icons/ri";
 
 export default function Home() {
@@ -26,21 +26,18 @@ export default function Home() {
             
           </div>
           <RiArrowDownWideLine
-           size={56} />
+            size={56} 
+            className="w-full" />
         </div>
       </section>
 
-      <section className="global_container h-144">
+      <section className="global_container h-[50vh]">
         <Highlights />
       </section>
       
 
-      <section className="global_container bg-white z-1 relative h-154 flex flex-col justify-center items-center">
-          <Link className="" href={'/'}>
-            <button className="home__features--bg font-bold py-2 px-12 rounded-lg text-2xl">
-              See What I&apos;ve Built
-            </button>
-          </Link>
+      <section className="global_container bg-white z-1 relative flex flex-col justify-center items-center h-screen">
+        <ProjectsHighlights />
       </section>
     </main>
   );

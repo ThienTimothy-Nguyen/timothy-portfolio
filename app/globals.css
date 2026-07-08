@@ -49,13 +49,13 @@
   }
 }
 
-@layer home {
-  .home__features--bg {
+@layer gradientBackground {
+  .home__button {
     background: #75d5f0;
     background: radial-gradient(circle,rgba(117, 213, 240, 1) 0%, rgba(92, 139, 196, 1) 100%);
   }
   
-  .home__features--bg:hover {
+  .home__button:hover {
     background: #4cbad9;
     color: beige;
     background: radial-gradient(circle,rgba(76, 186, 217, 1) 0%, rgba(32, 72, 120, 1) 100%);
@@ -66,6 +66,11 @@
   .home__animation-board--bg {
     background: #1cb8ba;
     background: linear-gradient(0deg,rgba(28, 184, 186, 1) 0%, rgba(7, 30, 38, 1) 100%);
+  }
+
+  .home_highlights {
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(140, 144, 156, 1) 100%);
   }
 }
 
@@ -88,5 +93,88 @@
 	.link__hover-effect:hover:after {
     		width: 100%;
     		left: 0;
+  }
+}
+
+@layer animation {
+  .float-around-1 {
+    animation: floatAround1 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .float-around-2 {
+    animation: floatAround2 7.5s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .float-around-3 {
+    animation: floatAround3 5.8s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  @keyframes floatAround1 {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    25% {
+      transform: translate3d(4px, -3px, 0);
+    }
+
+    50% {
+      transform: translate3d(-3px, 4px, 0);
+    }
+
+    75% {
+      transform: translate3d(3px, 2px, 0);
+    }
+  }
+
+  @keyframes floatAround2 {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    20% {
+      transform: translate3d(-5px, 2px, 0);
+    }
+
+    45% {
+      transform: translate3d(3px, 5px, 0);
+    }
+
+    70% {
+      transform: translate3d(6px, -4px, 0);
+    }
+  }
+
+  @keyframes floatAround3 {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    30% {
+      transform: translate3d(2px, 5px, 0);
+    }
+
+    55% {
+      transform: translate3d(-6px, -2px, 0);
+    }
+
+    80% {
+      transform: translate3d(4px, -5px, 0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .float-around-1,
+    .float-around-2,
+    .float-around-3 {
+      animation: none;
+      transform: none;
+    }
   }
 }

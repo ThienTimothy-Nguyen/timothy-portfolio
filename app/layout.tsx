@@ -26,7 +26,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
           <Header />
-          <div className="min-h-[90vh] overflow-scroll">
+          <div className="overflow-scroll min-h-screen">
             {children}
           </div>
           <Footer />

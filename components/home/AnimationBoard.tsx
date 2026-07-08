@@ -20,13 +20,13 @@ function AnimationBoard() {
 
   return (
     <div 
-      className='home__animation-board--bg h-104 shadow-xl overflow-hidden flex flex-col justify-center items-center text-white text-2xl md:text-xl font-bold gap-6 rounded-xl md:w-[50%] text-center p-4 relative'
+      className='home__animation-board--bg h-104 shadow-xl overflow-hidden flex flex-col justify-center items-center text-white text-2xl md:text-xl font-bold gap-6 rounded-xl md:w-[50%] text-center p-4 relative cursor-none'
       onMouseMove={(e) => handleMouseMove(e)}
       onMouseEnter={() => setIsShowed(true)}
       onMouseLeave={() => setIsShowed(false)}
     >
-      <h2 className=' max-w-xl'>&quot;Coming together is a beginning. Keeping together is progress. Working together is success.&quot;</h2>
-      <button className='flex flex-col justify-center items-center gap-2'>
+      <h2 className='float-around-1 max-w-xl'>&quot;Coming together is a beginning. Keeping together is progress. Working together is success.&quot;</h2>
+      <button className='flex flex-col justify-center items-center gap-2 cursor-none'>
         <div className='flex justify-center items-center border-2 border-white p-2 rounded-2xl shadow-xl hover:scale-90 hover:opacity-90 transition-transform duration-500 ease-in-out w-14'>
           <PiKeyhole className='transition-transform duration-500 ease-in-out' size={34} />
         </div>
