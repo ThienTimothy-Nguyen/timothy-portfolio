@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <div className="global_container bg-white">
+    <header className="global-container bg-white">
         <div className="row flex justify-between items-center h-full gap-3 bg-white z-1 relative">
             <h1 className="text-xl font-extrabold tracking-widest">
               TN
@@ -14,7 +14,7 @@ function Header() {
                 <Link href={'/contact'} className="link__hover-effect">Contact</Link>
             </nav>
         </div>
-    </div>
+    </header>
   )
 }
 

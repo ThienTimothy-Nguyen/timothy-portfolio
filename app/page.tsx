@@ -7,7 +7,7 @@ import { RiArrowDownWideLine } from "react-icons/ri";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center text-center">
-      <section className="global_container bg-white z-1 relative">
+      <section className="global-container bg-white z-1 relative">
         <div className="row flex flex-col gap-2 md:gap-6 text-start md:text-center max-w-5xl md:items-center">
           <h1 className="text-4xl md:text-5xl text-shadow-lg text-shadow-cyan-300 font-extrabold">
             Hi, I am Timothy Nguyen
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="global_container bg-white z-1 relative">
+      <section className="global-container bg-white z-1 relative">
         <div className="row flex flex-col justify-between items-center gap-6">
           <div className="flex flex-col md:flex-row text-start justify-between gap-8 md:gap-4">
             <Overview />
@@ -31,12 +31,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="global_container h-[50vh]">
+      <section className="global-container h-[50vh]">
         <Highlights />
       </section>
       
-
-      <section className="global_container bg-white z-1 relative flex flex-col justify-center items-center h-screen">
+      <section className="global-container bg-white z-1 relative flex flex-col justify-center items-center h-screen">
         <ProjectsHighlights />
       </section>
     </main>

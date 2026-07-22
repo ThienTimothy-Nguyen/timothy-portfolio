@@ -43,60 +43,73 @@
     max-width: 1279px;
   }
 
-  .global_container {
+  .global-container {
     padding: 24px 0;
     width: 100%;
   }
-}
 
-@layer gradientBackground {
   .home__button {
     background: #75d5f0;
-    background: radial-gradient(circle,rgba(117, 213, 240, 1) 0%, rgba(92, 139, 196, 1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(117, 213, 240, 1) 0%,
+      rgba(92, 139, 196, 1) 100%
+    );
   }
-  
+
   .home__button:hover {
     background: #4cbad9;
     color: beige;
-    background: radial-gradient(circle,rgba(76, 186, 217, 1) 0%, rgba(32, 72, 120, 1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(76, 186, 217, 1) 0%,
+      rgba(32, 72, 120, 1) 100%
+    );
     transform: scale(1.05);
-    transition: all 300ms ease-in-out
-  }
-
-  .home__animation-board--bg {
-    background: #1cb8ba;
-    background: linear-gradient(0deg,rgba(28, 184, 186, 1) 0%, rgba(7, 30, 38, 1) 100%);
+    transition: all 300ms ease-in-out;
   }
 
   .home_highlights {
     background: #ffffff;
-    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(140, 144, 156, 1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(140, 144, 156, 1) 100%
+    );
   }
-}
 
-@layer header {
   .link__hover-effect {
     position: relative;
     transition: all 700ms ease-in-out;
   }
 
-  .link__hover-effect:after {
-    		content: "";
-    		position: absolute;
-    		height: 3px;
-    		background-color: black;
-    		width: 0;
-    		right: 0;
-    		bottom: -3px;
-    		transition: all 700ms ease;
-	}
-	.link__hover-effect:hover:after {
-    		width: 100%;
-    		left: 0;
+  .link__hover-effect::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    width: 0;
+    right: 0;
+    bottom: -3px;
+    transition: all 700ms ease;
+  }
+
+  .link__hover-effect:hover::after {
+    width: 100%;
+    left: 0;
   }
 }
 
-@layer animation {
+@layer utilities {
+  .gradient--dark-blue {
+    background: #1cb8ba;
+    background: linear-gradient(
+      0deg,
+      rgba(28, 184, 186, 1) 0%,
+      rgba(7, 30, 38, 1) 100%
+    );
+  }
+
   .float-around-1 {
     animation: floatAround1 6s ease-in-out infinite;
     will-change: transform;

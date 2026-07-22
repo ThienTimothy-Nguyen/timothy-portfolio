@@ -4,7 +4,7 @@ function Footer() {
   const footerLinks = ["Home", "Projects", "Contact"];
 
   return (
-    <footer className="bg-black global_container text-white">
+    <footer className="bg-black global-container text-white">
       <div className="row flex flex-col items-center justify-between gap-4 md:flex-row">
         <p className="text-sm text-white/70">
           © {new Date().getFullYear()} Timothy. All rights reserved.
