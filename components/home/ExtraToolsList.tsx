@@ -17,31 +17,40 @@ function ExtraToolsList() {
   }
 
   const toolsList = [
-    {
-      name: "Firebase",
-      logo: "/firebase.svg",
-    },
-    {
-      name: "Stripe",
-      logo: "/stripe.svg"
-    },
-    {
-      name: "Clerk",
-      logo: "/clerk.jpg"
-    },
-    {
-      name: "Zustand",
-      logo: "/zustand.svg",
-    },
-    {
-      name: "Redux",
-      logo: "/redux.svg",
-    },
-    {
-      name: "IBM Watson Studio",
-      logo: "/ibm_watson_studio.png",
-    }
-  ]
+  {
+    name: "Firebase",
+    logo: "/firebase.svg",
+  },
+  {
+    name: "Stripe",
+    logo: "/stripe.svg",
+  },
+  {
+    name: "Clerk",
+    logo: "/clerk.jpg",
+  },
+  {
+    name: "Zustand",
+    logo: "/zustand.svg",
+  },
+  {
+    name: "Redux",
+    logo: "/redux.svg",
+  },
+  {
+    name: "GSAP",
+    logo: "/gsap.svg",
+  },
+  {
+    name: "Vercel",
+    logo: "/vercel.svg",
+  },
+  {
+    name: "Figma",
+    logo: "/figma.svg",
+  },
+];
+
   return (
     <Slider className="w-full md:w-[80%]" {...settings}>
       {toolsList.map((tool) => (

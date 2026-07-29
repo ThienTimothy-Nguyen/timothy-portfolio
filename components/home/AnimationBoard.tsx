@@ -20,7 +20,7 @@ function AnimationBoard() {
 
   return (
     <div 
-      className='gradient--dark-blue h-104 shadow-xl overflow-hidden flex flex-col justify-center items-center text-white text-2xl md:text-xl font-bold gap-6 rounded-xl md:w-[50%] text-center p-4 relative cursor-none'
+      className='gradient--dark-blue h-64 md:h-104 shadow-xl overflow-hidden flex flex-col justify-center items-center text-white text-xl md:text-xl font-bold gap-6 rounded-xl md:w-[50%] text-center p-4 relative cursor-none'
       onMouseMove={(e) => handleMouseMove(e)}
       onMouseEnter={() => setIsShowed(true)}
       onMouseLeave={() => setIsShowed(false)}

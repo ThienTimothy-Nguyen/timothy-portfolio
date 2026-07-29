@@ -15,7 +15,7 @@ function Overview() {
   return (
     <div className="md:w-[50%] flex flex-col gap-6 md:gap-5">
       <h3 className="font-bold text-xl md:text-2xl">About me</h3>
-      <p className="font-semibold tracking-wide leading-8">
+      <p className="font-semibold tracking-wide text-sm md:text-base leading-6 md:leading-8">
         I build responsive, component-driven web applications with Next.js, React, TypeScript, JavaScript, HTML, and CSS. I focus on turning ideas into clean interfaces, reliable features, smooth user experiences, and maintainable code that teams can confidently build on.
       </p>
       <ul className="grid grid-cols-4 gap-y-2 align-items-between">

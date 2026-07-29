@@ -60,9 +60,9 @@ function Highlights() {
     ];
 
     return (
-        <div className="home_highlights w-full h-full fixed top-0 -z-1">
+        <div className="row h-screen gradient--gray panel absolute inset-0 z-2 shadow-2xl">
             {softSkills.map((skill, i) => (
-                <span key={skill.label} className={`${skill.position} ${skill.size} float-around-${(i%3) + 1} absolute -translate-x-1/2 -translate-y-1/2 font-bold tracking-wide text-black/70`}>
+                <span key={skill.label} className={`${skill.position} ${skill.size} float-around-${(i%3) + 1} absolute -translate-x-1/2 -translate-y-1/2 font-bold tracking-wide text-black/75`}>
                     {skill.label}
                 </span>
             ))}

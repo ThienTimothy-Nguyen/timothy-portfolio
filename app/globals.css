@@ -48,7 +48,7 @@
     width: 100%;
   }
 
-  .home__button {
+  .button-primary {
     background: #75d5f0;
     background: radial-gradient(
       circle,
@@ -57,7 +57,7 @@
     );
   }
 
-  .home__button:hover {
+  .button-primary:hover {
     background: #4cbad9;
     color: beige;
     background: radial-gradient(
@@ -67,15 +67,6 @@
     );
     transform: scale(1.05);
     transition: all 300ms ease-in-out;
-  }
-
-  .home_highlights {
-    background: #ffffff;
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(140, 144, 156, 1) 100%
-    );
   }
 
   .link__hover-effect {
@@ -101,6 +92,15 @@
 }
 
 @layer utilities {
+  .gradient--gray {
+    background: black;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(140, 144, 156, 1) 100%
+    );
+  }
+
   .gradient--dark-blue {
     background: #1cb8ba;
     background: linear-gradient(
