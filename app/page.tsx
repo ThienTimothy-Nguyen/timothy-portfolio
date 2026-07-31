@@ -33,7 +33,7 @@ export default function Home() {
         scrollTrigger: {
           trigger: container,
           pin: true,
-          scrub: 2,
+          scrub: 1,
           end: () => "+=" + window.innerHeight * (panels.length - 1),
         }
       })
@@ -48,7 +48,7 @@ export default function Home() {
     },
     {
       scope: panelContainerRef,
-    }, 
+    }
   );
 
   return (

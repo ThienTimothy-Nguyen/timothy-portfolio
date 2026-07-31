@@ -99,7 +99,7 @@ function Highlights() {
                 alt="Galaxy background" 
                 fill
                 sizes="100"
-                loading="eager" />
+             />
 
             {softSkills.map((skill, i) => (
                 <span 

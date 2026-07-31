@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { MdKey } from 'react-icons/md';
 import { PiKeyhole } from 'react-icons/pi'
@@ -8,7 +9,8 @@ function AnimationBoard() {
     x: 0,
     y: 0,
   });
-  const [isShowed, setIsShowed] = useState(false);  
+  const [isShowed, setIsShowed] = useState(false); 
+  const router = useRouter(); 
 
   const handleMouseMove = (e:React.MouseEvent<HTMLElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -26,12 +28,15 @@ function AnimationBoard() {
       onMouseLeave={() => setIsShowed(false)}
     >
       <h2 className='float-around-1 max-w-xl'>&quot;Coming together is a beginning. Keeping together is progress. Working together is success.&quot;</h2>
-      <button className='flex flex-col justify-center items-center gap-2 cursor-none'>
-        <div className='flex justify-center items-center border-2 border-white p-2 rounded-2xl shadow-xl hover:scale-90 hover:opacity-90 transition-transform duration-500 ease-in-out w-14'>
+      <div className='flex flex-col justify-center items-center gap-2 cursor-none'>
+        <button 
+          className='flex justify-center items-center border-2 border-white p-2 rounded-2xl shadow-xl hover:scale-90 hover:opacity-90 transition-transform duration-500 ease-in-out w-14'
+          onClick={() => router.push("/contact")}
+        >
           <PiKeyhole className='transition-transform duration-500 ease-in-out' size={34} />
-        </div>
+        </button>
         <h3 className='text-[18px] font-medium'>Let&apos;s connect !</h3>
-      </button>
+      </div>
 
       {isShowed && <MdKey 
         className='absolute top-0 left-0 pointer-events-none transition-none duration-700 ease-out' size={48}
