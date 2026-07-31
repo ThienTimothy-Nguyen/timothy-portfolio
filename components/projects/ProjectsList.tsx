@@ -83,7 +83,6 @@ function ProjectsList() {
           scroller: container,
           horizontal: true,
           scrub: 2,
-          markers: true,
           start: "left right",
           end: "center 10%"
         }
