@@ -92,7 +92,7 @@ function Highlights() {
 
     return (
         <div 
-            className="row h-screen panel relative z-2 shadow-2xl"
+            className="row h-screen panel relative z-2"
         >
             <Image 
                 src="/galaxy-background.avif"
