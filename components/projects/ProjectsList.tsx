@@ -82,15 +82,13 @@ function ProjectsList() {
           trigger: project,
           scroller: container,
           horizontal: true,
-          scrub: 2,
+          scrub: 1,
           start: "left right",
           end: "center 10%"
         }
       })
 
-      gsap.set(project, {
-        xPercent: 60,
-      })
+   
     
       tl
         .fromTo(
@@ -100,7 +98,7 @@ function ProjectsList() {
           {
             scale: 1,
             ease: "none",
-            duration: 3,
+            duration: 2.75,
           })
         .to(
           project,{
@@ -117,7 +115,7 @@ function ProjectsList() {
     <section 
       className="global-container">
       <ol 
-        className="row flex items-center h-full overflow-x-scroll scrollbar-none pr-200"
+        className="row flex items-center h-full overflow-x-scroll scrollbar-none pl-[10vw] pr-[25vw]"
         ref={projectsContainerRef}>
         {projectLists.map(project => (
           <li 

@@ -25,7 +25,7 @@ function ProjectCard({
   return (
     <div className="shadow-xl border border-black rounded-lg overflow-hidden">
       <figure 
-        className="bg-gray-400 h-[56vw] max-h-80 min-w-[68vw] md:min-w-[56vw] lg:min-w-[40vw] rounded-t-lg relative overflow-hidden"
+        className="bg-gray-400 h-[56vw] max-h-80 min-w-[72vw] md:min-w-[60vw] lg:min-w-[44vw] rounded-t-lg relative overflow-hidden"
         onMouseEnter={() => setIsLinksShowed(true)}
         onMouseLeave={() => setIsLinksShowed(false)}
       >

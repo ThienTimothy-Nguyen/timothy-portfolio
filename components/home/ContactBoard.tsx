@@ -2,9 +2,10 @@
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { MdKey } from 'react-icons/md';
-import { PiKeyhole } from 'react-icons/pi'
+import { PiKeyhole } from 'react-icons/pi';
+import Image from 'next/image';
 
-function AnimationBoard() {
+function ContactBoard() {
   const [position, setPosition] = useState({
     x: 0,
     y: 0,
@@ -22,20 +23,28 @@ function AnimationBoard() {
 
   return (
     <div 
-      className='gradient--dark-blue h-64 md:h-104 shadow-xl overflow-hidden flex flex-col justify-center items-center text-white text-xl md:text-xl font-bold gap-6 rounded-xl md:w-[50%] text-center p-4 relative cursor-none'
+      className='h-64 md:h-104 shadow-xl overflow-hidden flex flex-col justify-center items-center text-white text-xl md:text-xl font-bold gap-6 rounded-xl md:w-[50%] text-center p-4 relative cursor-none'
       onMouseMove={(e) => handleMouseMove(e)}
       onMouseEnter={() => setIsShowed(true)}
       onMouseLeave={() => setIsShowed(false)}
     >
-      <h2 className='float-around-1 max-w-xl'>&quot;Coming together is a beginning. Keeping together is progress. Working together is success.&quot;</h2>
+      <Image 
+        src="/galaxy-background.avif"
+        alt="Galaxy background" 
+        fill
+        sizes="100"
+        loading="eager"
+        className='-z-1'
+      />
+      <h2 className='float-around-1 max-w-xl'>&quot;I deliver polished websites that help businesses stand out.&quot;</h2>
       <div className='flex flex-col justify-center items-center gap-2 cursor-none'>
         <button 
-          className='flex justify-center items-center border-2 border-white p-2 rounded-2xl shadow-xl hover:scale-90 hover:opacity-90 transition-transform duration-500 ease-in-out w-14'
+          className='flex justify-center items-center border-3 border-white p-2 rounded-2xl shadow-xl hover:scale-90 hover:opacity-90 transition-transform duration-500 ease-in-out w-14 cursor-none'
           onClick={() => router.push("/contact")}
         >
           <PiKeyhole className='transition-transform duration-500 ease-in-out' size={34} />
         </button>
-        <h3 className='text-[18px] font-medium'>Let&apos;s connect !</h3>
+        <h3 className='text-[18px] font-bold'>Let&apos;s connect !</h3>
       </div>
 
       {isShowed && <MdKey 
@@ -47,4 +56,4 @@ function AnimationBoard() {
   )
 }
 
-export default AnimationBoard
+export default ContactBoard

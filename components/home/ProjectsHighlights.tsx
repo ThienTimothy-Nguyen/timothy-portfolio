@@ -3,7 +3,7 @@ import ExtraToolsList from './ExtraToolsList';
 
 function ProjectsHighlights() {
   return (
-    <div className="row flex flex-col justify-center items-center gap-14 py-10 h-screen panel absolute inset-0 z-3 bg-white">
+    <div className="row flex flex-col justify-center items-center gap-14 py-10 h-screen panel absolute inset-0 z-2 bg-white">
       <div className='flex flex-col justify-between items-center gap-10'>
         <h1 className='text-3xl md:text-4xl font-semibold'>
           Every project is an opportunity 

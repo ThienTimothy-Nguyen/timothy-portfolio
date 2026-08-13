@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import Highlights from "@/components/home/Highlights";
 import ProjectsHighlights from "@/components/home/ProjectsHighlights";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -66,11 +65,7 @@ export default function Home() {
 
       <section className="w-full">
         <div ref={panelContainerRef} className="panel-container w-full h-screen overflow-hidden relative">
-          
           <AboutMe />
-
-          <Highlights />
-
           <ProjectsHighlights />
         </div>
       </section>

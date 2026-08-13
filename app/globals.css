@@ -92,24 +92,6 @@
 }
 
 @layer utilities {
-  .gradient--dark-blue {
-    background: #1cb8ba;
-    background: linear-gradient(
-      0deg,
-      rgba(28, 184, 186, 1) 0%,
-      rgba(7, 30, 38, 1) 100%
-    );
-  }
-
-  .gradient--light-blue {
-    background: #4cbad9;
-    background: radial-gradient(
-      circle,
-      rgba(76, 186, 217, 1) 0%,
-      rgba(32, 72, 120, 1) 100%
-    );
-  }
-
   .float-around-1 {
     animation: floatAround1 6s ease-in-out infinite;
     will-change: transform;
