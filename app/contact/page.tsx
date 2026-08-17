@@ -60,7 +60,6 @@ export default function ContactPage() {
           </p>
         </div>
 
-        {/* Availability badge */}
         <div className="flex items-center gap-2 mt-10 md:mt-0">
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shrink-0" />
           <span className="text-[14px] whitespace-nowrap font-medium tracking-wide text-cyan-400">
@@ -69,7 +68,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── Right panel ── */}
       <section className="flex-1 bg-white flex flex-col justify-center overflow-y-auto">
         <ul className="divide-y divide-black/10">
           {contacts.map(({ label, value, href, icon: Icon, external, description }) => (
@@ -81,7 +79,7 @@ export default function ContactPage() {
                 className="group flex items-center justify-between gap-4 px-8 md:px-14 py-5 md:py-6
                            transition-colors duration-200 hover:bg-black hover:text-white"
               >
-                {/* Icon + text */}
+    
                 <div className="flex items-center gap-5 min-w-0">
                   <span className="shrink-0 w-10 h-10 rounded-lg border border-black/20 flex items-center justify-center
                                    group-hover:border-white/30 transition-colors duration-200">
@@ -101,7 +99,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Arrow */}
                 <FiArrowUpRight
                   size={20}
                   className="shrink-0 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0
