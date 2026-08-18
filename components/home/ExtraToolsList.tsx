@@ -65,7 +65,6 @@ function ExtraToolsList() {
                 className="object-contain"
               />
             </figure>
-
             <h3 className="text-sm font-medium">{tool.name}</h3>
           </div>
         </div>

@@ -36,6 +36,7 @@ function ContactBoard() {
         loading="eager"
         className='-z-1'
       />
+      
       <h2 className='float-around-1 max-w-xl'>&quot;I deliver polished websites that help businesses stand out.&quot;</h2>
       <div className='flex flex-col justify-center items-center gap-2 cursor-none'>
         <button 

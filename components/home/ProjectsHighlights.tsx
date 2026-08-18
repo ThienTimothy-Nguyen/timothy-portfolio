@@ -14,7 +14,9 @@ function ProjectsHighlights() {
           <span className='text-start float-around-3'>Create better experiences</span>
         </h2>
       </div>
+
       <ExtraToolsList />
+      
       <Link className="" href={'/projects'}>
         <button className="button-primary font-bold py-2 px-8 rounded-lg text-lg">
           See What I&apos;ve Built

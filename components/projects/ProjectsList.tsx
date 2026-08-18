@@ -87,8 +87,6 @@ function ProjectsList() {
           end: "center 10%"
         }
       })
-
-   
     
       tl
         .fromTo(

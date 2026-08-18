@@ -10,7 +10,6 @@ function AboutMe() {
         <Overview />
         <ContactBoard />
       </div>
-
       <RiArrowDownWideLine size={56} className="w-full" />
     </div>
   )
